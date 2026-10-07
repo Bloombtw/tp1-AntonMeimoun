@@ -170,7 +170,22 @@ Emplacement : `.claude/skills/bibliotheque-mcp/SKILL.md` (format Agent Skills de
 
 ### 3.1 — Outil utilisé pour l'écrire
 
-*À compléter.*
+**Outil retenu : `skill-creator`**, le skill officiel d'Anthropic (dépôt `anthropics/skills`, commit `683bc88`), installé dans `.claude/skills/skill-creator/`.
+
+**Pourquoi ce choix :**
+- c'est l'outil de l'éditeur de l'agent utilisé (Claude Code) : il suit exactement le format attendu (frontmatter `name` + `description`, dossier du même nom) ;
+- il ne se contente pas de générer un fichier : il impose une méthode (capturer ce que l'agent a appris, rédiger, tester avec et sans le skill, itérer) et fournit un validateur (`scripts/quick_validate.py`) ainsi qu'un format de tests (`evals/evals.json`).
+
+**Ce que l'agent en a tiré pour réécrire `bibliotheque-mcp`** (ancienne version conservée dans `skill-workspace/skill-snapshot/`) :
+- **Description « insistante »** : elle cite les outils et les situations métier (inventaire, retards, relance, suppression...), car les agents ont tendance à ne pas déclencher un skill.
+- **Le pourquoi plutôt que des MUST** : chaque règle explique la conséquence d'une erreur (ex. « sinon tu diras à quelqu'un qu'il ne doit rien »).
+- **Divulgation progressive** : `SKILL.md` court (~100 lignes) avec les 5 réflexes ; preuves détaillées (appel + réponse brute) dans `references/pieges.md`, lu à la demande.
+- **Script fourni** : `scripts/biblio.py`, parce qu'à chaque session l'agent réécrivait le même client (espacement des appels, rejeu des réponses dégradées, pagination arrêtée à la page vide).
+- **Faux positifs évités** : section « ce qui est normal » (comportements annoncés par les descriptions des outils).
+- **Tests** : `evals/evals.json`, avec les 5 missions et des critères vérifiables.
+- Validation : `quick_validate.py` → `Skill is valid!`.
+
+Les tests automatiques de `skill-creator` (sous-agents avec et sans skill lancés en parallèle) n'ont pas été lancés, pour deux raisons : ils partagent le quota du token, ce qui déclenche le piège 1 ; et les missions 3 et 4 écrivent sur le serveur, donc chaque test créerait ou archiverait de vrais prêts. Le test avant/après est fait à la main en 3.3.
 
 ### 3.3 — La preuve
 

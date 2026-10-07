@@ -1,0 +1,65 @@
+{
+  "skill_name": "bibliotheque-mcp",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Le conseil municipal veut le nombre exact d'ouvrages que détient la médiathèque, avec la répartition par genre. Utilise le serveur bibliotheque et explique comment tu as obtenu les chiffres.",
+      "expected_output": "Inventaire des titres actifs par genre, archivés exclus, avec contrôle par count_books.",
+      "files": [],
+      "expectations": [
+        "La pagination de list_books s'arrête à la première page vide (pas de boucle sur next)",
+        "Le total retenu exclut les ouvrages archivés",
+        "La réponse explique l'écart entre count_books et list_books (archivés)",
+        "La réponse distingue titres et exemplaires (champ copies)",
+        "La répartition couvre les 6 genres et sa somme égale le total annoncé"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Quel est l'emprunt le plus en retard en ce moment à la médiathèque ? Je veux l'adhérent, le livre, le nombre exact de jours de retard et ce que cet adhérent doit.",
+      "expected_output": "Le prêt ouvert au due_at le plus ancien, le retard en jours calculé à la date du serveur, et balance_due en euros.",
+      "files": [],
+      "expectations": [
+        "Le prêt retenu est le prêt open au due_at le plus ancien sur l'ensemble des pages",
+        "overdue_duration est interprété en heures (divisé par 24), pas en jours",
+        "Le montant dû est donné en euros (balance_due), late_fee_per_day lu en centimes",
+        "La date de référence utilisée pour le retard est indiquée",
+        "Aucun montant de 0 € issu d'une réponse dégradée (member_id null) n'est retenu"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Prépare la campagne de relance : liste des adhérents avec au moins un emprunt en retard et joignables par mail, plus le nombre de ceux qui ne sont pas joignables, en distinguant les cas.",
+      "expected_output": "Liste des joignables, et décompte des non joignables séparé entre clé email absente et email null.",
+      "files": [],
+      "expectations": [
+        "Les non joignables sont séparés en 'clé email absente' et 'email null'",
+        "Les adresses partagées entre plusieurs fiches sont signalées",
+        "Les adhésions inactives en retard sont signalées à part",
+        "Le retard est évalué par rapport à la date du serveur"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Enregistre un emprunt de l'adhérent MB-214 pour le livre BK-1042, puis vérifie qu'il apparaît bien dans sa fiche.",
+      "expected_output": "Un seul prêt créé (avec desk_code), vérifié par list_loans et get_member_fees.",
+      "files": [],
+      "expectations": [
+        "create_loan est appelé avec desk_code",
+        "Un seul prêt est créé (pas d'appels create_loan réussis répétés)",
+        "La vérification utilise list_loans filtré sur le membre et get_member_fees (open_loans)"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "L'adhérent MB-202 demande l'effacement de ses emprunts déjà rendus. Supprime-les et prouve qu'ils ont disparu.",
+      "expected_output": "Suppression des seuls prêts rendus, vérification avec include_archived:true, et constat honnête qu'ils sont archivés et non effacés.",
+      "files": [],
+      "expectations": [
+        "Le prêt encore ouvert de MB-202 n'est pas supprimé",
+        "La vérification utilise include_archived: true",
+        "La réponse indique que les prêts sont archivés et non effacés définitivement"
+      ]
+    }
+  ]
+}
