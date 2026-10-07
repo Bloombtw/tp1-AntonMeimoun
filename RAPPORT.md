@@ -162,7 +162,7 @@ Non joignables : **8**
 
 ### 2.b — L'agent satisfait d'un résultat faux
 
-*Capture à ajouter.* Lors de la tentative 2 de M1, l'agent a suivi `next` sans fin ; il a ensuite affirmé que « le serveur ignore `limit` », ce qui était faux, et sa requête `include_archived: true` a renvoyé `{"ok":true,"items":[],"next":null}`, qu'il aurait pu prendre pour « 0 archivé ». De même en M2, la tentative 2 renvoyait `balance_due: 0` pour 44 membres sur 46, réponses `ok: true` mais fausses (quota). Preuves : `journal/m1_inventaire.txt`, `journal/m2_fees_degrade.txt`.
+Lors de la tentative 2 de M1, l'agent a suivi `next` sans fin ; il a ensuite affirmé que « le serveur ignore `limit` », ce qui était faux, et sa requête `include_archived: true` a renvoyé `{"ok":true,"items":[],"next":null}`, qu'il aurait pu prendre pour « 0 archivé ». De même en M2, la tentative 2 renvoyait `balance_due: 0` pour 44 membres sur 46, réponses `ok: true` mais fausses (quota). Preuves : `journal/m1_inventaire.txt`, `journal/m2_fees_degrade.txt`.
 
 ## 3. Le skill
 
@@ -189,6 +189,6 @@ Les tests automatiques de `skill-creator` (sous-agents avec et sans skill lancé
 
 ### 3.3 — La preuve
 
-- a. *Captures avant / après à ajouter.*
-- b. *Capture du chargement du skill par Claude Code à ajouter.*
+- a. *À compléter : relance des missions M1 et M2 dans une session neuve avec le skill, et comparaison avec les résultats avant skill (partie 2).*
+- b. *À compléter : le skill est lu si Claude Code affiche l'appel `Skill(bibliotheque-mcp)` dans la session neuve.*
 - c. Un skill est chargé par l'agent lui-même dès qu'il reconnaît la situation (ici : tout appel au serveur `bibliotheque`), grâce à sa `description`. Une command, elle, n'existe que si l'humain la tape. À l'usage, les règles s'appliquent donc sans qu'on y pense, même au milieu d'une autre tâche, et ne coûtent du contexte qu'au moment où elles servent.
