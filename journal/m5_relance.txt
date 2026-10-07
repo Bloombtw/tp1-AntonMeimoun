@@ -1,0 +1,24 @@
+>>> {"name": "get_member", "arguments": {"memberId": "MB-203"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-203\",\n    \"first_name\": \"Antoine\",\n    \"last_name\": \"Mercier\",\n    \"joined_at\": \"21/02/2022\",\n    \"active\": true,\n    \"email\": null\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-212"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-212\",\n    \"first_name\": \"Manon\",\n    \"last_name\": \"Fontaine\",\n    \"joined_at\": \"01/03/2026\",\n    \"active\": true,\n    \"email\": null\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-226"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-226\",\n    \"first_name\": \"Lucas\",\n    \"last_name\": \"Moreau\",\n    \"joined_at\": \"18/01/2025\",\n    \"active\": true,\n    \"email\": null\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-232"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-232\",\n    \"first_name\": \"Paul\",\n    \"last_name\": \"Barbier\",\n    \"joined_at\": \"18/02/2024\",\n    \"active\": true,\n    \"email\": null\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-234"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-234\",\n    \"first_name\": \"Sarah\",\n    \"last_name\": \"Moreau\",\n    \"joined_at\": \"24/10/2023\",\n    \"active\": true,\n    \"email\": null\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-206"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-206\",\n    \"first_name\": \"Emma\",\n    \"last_name\": \"Barbier\",\n    \"joined_at\": \"25/02/2023\",\n    \"active\": true\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-235"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-235\",\n    \"first_name\": \"Léa\",\n    \"last_name\": \"Mercier\",\n    \"joined_at\": \"19/05/2026\",\n    \"active\": true\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member", "arguments": {"memberId": "MB-241"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member\": {\n    \"member_id\": \"MB-241\",\n    \"first_name\": \"Emma\",\n    \"last_name\": \"Lefèvre\",\n    \"joined_at\": \"04/04/2026\",\n    \"active\": true\n  }\n}"}]}, "jsonrpc": "2.0", "id": 2}
+

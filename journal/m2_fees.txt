@@ -1,0 +1,138 @@
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-200"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-200\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 120,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0.75\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-201"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-201\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 432,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 2.7\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-202"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-202\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 2760,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 17.25\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-203"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-203\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 2376,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 14.85\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-204"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-204\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 1992,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 12.45\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-205"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-205\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-206"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-206\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 3048,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 19.05\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-207"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-207\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 3816,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 23.85\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-208"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-208\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 1608,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 10.05\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-209"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-209\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-210"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-210\",\n  \"open_loans\": 4,\n  \"overdue_duration\": 6144,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 38.4\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-211"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-211\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-212"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-212\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 1008,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 6.3\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-213"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-213\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-214"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-214\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 2664,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 16.65\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-215"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-215\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-216"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-216\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 6744,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 42.15\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-217"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-217\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 984,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 6.15\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-218"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-218\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-219"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-219\",\n  \"open_loans\": 3,\n  \"overdue_duration\": 3216,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 20.1\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-220"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-220\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-221"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-221\",\n  \"open_loans\": 3,\n  \"overdue_duration\": 9600,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 60\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-222"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-222\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-223"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-223\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-224"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-224\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-225"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-225\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 4296,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 26.85\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-226"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-226\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 2616,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 16.35\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-227"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-227\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 24,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0.15\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-228"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-228\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 3456,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 21.6\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-229"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-229\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-230"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-230\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 2496,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 15.6\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-231"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-231\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 3000,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 18.75\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-232"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-232\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 5712,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 35.7\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-233"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-233\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-234"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-234\",\n  \"open_loans\": 4,\n  \"overdue_duration\": 9912,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 61.95\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-235"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-235\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 2592,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 16.2\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-236"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-236\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-237"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-237\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 7536,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 47.1\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-238"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-238\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-239"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-239\",\n  \"open_loans\": 5,\n  \"overdue_duration\": 9312,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 58.2\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-240"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-240\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 312,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 1.95\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-241"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-241\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 6096,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 38.1\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-242"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-242\",\n  \"open_loans\": 2,\n  \"overdue_duration\": 5352,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 33.45\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-243"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-243\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-244"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-244\",\n  \"open_loans\": 0,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+
+>>> {"name": "get_member_fees", "arguments": {"member_id": "MB-245"}}
+{"result": {"content": [{"type": "text", "text": "{\n  \"ok\": true,\n  \"member_id\": \"MB-245\",\n  \"open_loans\": 1,\n  \"overdue_duration\": 0,\n  \"late_fee_per_day\": 15,\n  \"balance_due\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}
+

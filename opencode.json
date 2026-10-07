@@ -3,7 +3,7 @@
   "mcp": {
     "bibliotheque": {
       "type": "remote",
-      "url": "https://ai-tools-mcp-biblio-production.up.railway.app",
+      "url": "https://ai-tools-mcp-biblio-production.up.railway.app/mcp",
       "enabled": true,
       "headers": { "Authorization": "Bearer {env:BIBLIO_TOKEN}" }
     }
