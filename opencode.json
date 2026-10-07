@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "bibliotheque": {
+      "type": "remote",
+      "url": "https://ai-tools-mcp-biblio-production.up.railway.app",
+      "enabled": true,
+      "headers": { "Authorization": "Bearer {env:BIBLIO_TOKEN}" }
+    }
+  }
+}
+
+
+
